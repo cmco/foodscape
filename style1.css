@@ -1,0 +1,437 @@
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #3c3c3c;
+  }
+  100% {
+    background-color: #dadada;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #3c3c3c;
+  }
+  100% {
+    background-color: #dadada;
+  }
+}
+
+@-webkit-keyframes textcolor_change {
+  0% {
+    color: #fafafa;
+  }
+  25% {
+    color: #c8c8c8;
+  }
+  50% {
+    color: #969696;
+  }
+  75% {
+    color: #646464;
+  }
+  100% {
+    color: #3d3d3d;
+  }
+}
+
+@keyframes textcolor_change {
+  0% {
+    color: #fafafa;
+  }
+  25% {
+    color: #c8c8c8;
+  }
+  50% {
+    color: #969696;
+  }
+  75% {
+    color: #646464;
+  }
+  100% {
+    color: #3d3d3d;
+  }
+}
+
+#bgvid {
+  position: absolute;
+  top: -400px;
+  overflow: hidden;
+  z-index: -100;
+}
+
+#blackdiv {
+  display: block;
+  /* overflow: hidden; */
+  /* background-color: #333; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3d3d3d;
+}
+
+.nav_elements_container {
+  color: red;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0;
+  width: 6rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#navbar {
+  width: 100%;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_elements {
+  width: 100px;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  margin: auto;
+  text-decoration: none;
+}
+
+.navbar_elements:visited, .navbar_elements:link {
+  color: #dadada;
+}
+
+.navbar_elementsHover {
+  -webkit-animation: pulse 0.1s 1;
+          animation: pulse 0.1s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #dadada;
+}
+
+.navbar_elementsHover:visited, .navbar_elementsHover:link {
+  color: #dadada;
+}
+
+#Title {
+  display: block;
+  font-family: "Roboto";
+  color: #dadada;
+  padding-top: 27px;
+  line-height: 1rem;
+  /* padding-bottom: 2rem; */
+  text-align: center;
+  font-size: 4rem;
+  /* line-height: 20px; */
+  font-weight: 700;
+}
+
+.center_text {
+  font-size: 1.25rem;
+  color: #dadada;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 400;
+}
+
+#foxingmv_container {
+  text-align: center;
+}
+
+#foxingmv {
+  height: 25rem;
+  width: 45rem;
+}
+
+#CreatorContainer {
+  background-color: #3d3d3d;
+  display: block;
+  overflow: hidden;
+}
+
+#Creators {
+  font-family: "Roboto";
+  font-size: 35px;
+  text-align: center;
+  color: #dadada;
+}
+
+#triplepic_container_content {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0;
+  margin-top: 0px;
+  margin-bottom: 5rem;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.triplepic_Creators {
+  /* display: block; */
+  float: left;
+  width: 50%;
+  /* padding: 55px; */
+  padding-bottom: 100px;
+  background-color: #3d3d3d;
+}
+
+#meg,
+#ced,
+#chow {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.triplepic_Content {
+  /* display: block; */
+  float: left;
+  width: 26%;
+  /* padding: 55px; */
+  /* padding-bottom: 100px; */
+}
+
+#marugame,
+#bk,
+#rustic_mornings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+#ContentImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#ContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #3d3d3d;
+}
+
+#Content100 {
+  width: 100%;
+}
+
+#Content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* width: 100%; */
+  font-family: "Roboto";
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  background-color: #3d3d3d;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #dadada;
+}
+
+#About {
+  font-family: "Roboto";
+  font-size: 35px;
+  text-align: center;
+}
+
+#About_Paragraph {
+  font-family: "Montserrat";
+  font-size: 22px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.halfscreenmeg {
+  float: left;
+  width: 60%;
+  text-align: center;
+}
+
+.halfscreenced {
+  float: right;
+  width: 60%;
+  text-align: center;
+}
+
+#MegBio {
+  font-family: "Roboto";
+  float: left;
+  background-color: #3d3d3d;
+  color: #dadada;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+#megbiopic_container {
+  display: block;
+  float: right;
+  background-color: #3d3d3d;
+  width: 40%;
+}
+
+.Name {
+  font-size: 40px;
+}
+
+.HostText {
+  font-size: 35px;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+#megbiopic {
+  float: right;
+  padding: 60px;
+  width: 55%;
+  background-color: #3d3d3d;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: auto;
+}
+
+#CedBio {
+  font-family: "Roboto";
+  float: left;
+  background-color: #3d3d3d;
+  color: #dadada;
+  width: 100%;
+}
+
+#cedbiopic_container {
+  display: block;
+  /* float: left; */
+  background-color: #3d3d3d;
+  width: 40%;
+}
+
+#cedbiopic {
+  display: block;
+  float: left;
+  background-color: #3d3d3d;
+  width: 50%;
+  padding: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CedName {
+  font-size: 40px;
+  clear: both;
+}
+
+.CedHostText {
+  font-size: 35px;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+#AboutCed {
+  font-family: "Montserrat";
+  width: 100%;
+  font-size: 20px;
+  margin: auto;
+}
+
+.Bio {
+  background-color: #3d3d3d;
+  width: 100%;
+}
+
+#AboutMeg {
+  display: block;
+  font-family: "Montserrat";
+  width: 100%;
+  font-size: 20px;
+  margin: auto;
+}
+
+#bottomdiv {
+  display: block;
+  text-align: center;
+}
+
+.bottom_navbar_elements {
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto";
+}
+
+.bottom_navbar_elements:visited, .bottom_navbar_elements:link {
+  color: black;
+}
